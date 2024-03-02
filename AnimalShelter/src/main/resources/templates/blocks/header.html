@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<div th:fragment="header">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style = "color:MediumBlue;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Приют Краснокот</span>
+      </a>
+
+      <ul class="nav nav-pills" style="color:SkyBlue;">
+        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+        <li class="nav-item"><a href="/animals" class="nav-link">Питомцы</a></li>
+        <li class="nav-item"><a href="/animals/add" class="nav-link">Пристроить питомца</a></li>
+        <li class="nav-item"><a href="/help" class="nav-link">Помощь</a></li>
+        <li class="nav-item"><a href="/contacts" class="nav-link">Контакты</a></li>
+        <li class="nav-item"><a href="/aboutme" class="nav-link">Об авторе</a></li>
+        <li class="nav-item"><a href="/registration" class="nav-link">Регистрация</a></li>
+        <li class="nav-item"><a href="/user" class="nav-link">Пользователи</a></li>
+        <form th:action="@{/logout}" method="post">
+          <input type="submit" value="Выйти" class="nav-link active"/>
+        </form>
+
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+com.example.AnimalShelter
+com.example.AnimalShelter.config
+com.example.AnimalShelter.controller
+com.example.AnimalShelter.entity
+com.example.AnimalShelter.exception
+com.example.AnimalShelter.repository
+com.example.AnimalShelter.service
