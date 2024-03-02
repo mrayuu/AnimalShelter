@@ -1,9 +1,12 @@
 # Веб-приложения "Приют для животных"
 
 ## База знаний
-- [Требования] ?
+- [Требования] (https://docs.google.com/spreadsheets/d/1N2gedTlxZ1ESA8WT5FcqKaaoOL87csBdxDH0h6G0BFM/edit?usp=sharing)
+- 
 - Архитектурное решение (https://docs.google.com/document/d/1t7hEMae2canPNx-rfOA2rVY6c61DaG_X/edit?usp=sharing&ouid=110423896399811611972&rtpof=true&sd=true)
+- 
 - БД ![image](https://github.com/mrayuu/AnimalShelter/assets/96128195/44e5368d-b1f5-4916-ba69-9ef36993f41e)
+- 
 - Макет Приложения ![image](https://github.com/mrayuu/AnimalShelter/assets/96128195/8f0f2f1c-440b-4ada-a0f9-eb0d204d441d)
 
 
