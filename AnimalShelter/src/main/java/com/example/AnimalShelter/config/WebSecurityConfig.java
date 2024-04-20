@@ -47,7 +47,7 @@ public class WebSecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/about", "/aboutme", "/animals", "/animals/{id}", "/contacts", "/help")
                         .hasAnyAuthority("USER", "ADMIN")
                         .requestMatchers(HttpMethod.POST, "/animals").hasAnyAuthority("USER", "ADMIN")
-                        .requestMatchers("/**").hasAuthority("ADMIN")
+                        .requestMatchers("/**").hasAnyAuthority("USER", "ADMIN")
 
                         .anyRequest().authenticated()
 
