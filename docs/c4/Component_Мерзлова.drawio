@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" modified="2024-05-10T20:57:41.982Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.3.1" etag="bK4S88VxkeJYcJslFqv1" type="device">
+  <diagram name="Контейнерная диаграмма" id="0">
+    <mxGraphModel dx="1290" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frontend" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Frontend&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Container: React JS]&lt;/font&gt;&lt;br&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Веб-интерфейс для посетителей и сотрудников приюта&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#348cfe;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="100" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Backend&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Container: Spring Boot]&lt;/font&gt;&lt;br&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Серверная часть приложения, взаимодействие с базой данных&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#348cfe;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="400" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="database" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;База данных&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;[Container: PostgreSQL]&lt;/font&gt;&lt;br&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Хранит данные о животных и сотрудниках&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=4.885707310267833;fillColor=#348CFE;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="700" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend-backend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="frontend" target="backend" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="backend-database" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="backend" target="database" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
