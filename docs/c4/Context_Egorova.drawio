@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" modified="2024-05-10T20:33:44.593Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.3.1" etag="sMVEDscHNywqGLsmmLUt" type="device">
+  <diagram name="C4 Context Diagram" id="c4_context">
+    <mxGraphModel dx="1290" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="visitor" value="Посетитель сайта" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3B5998;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="100" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="webApp" value="Веб-приложение приюта" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="350" y="100" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="database" value="База данных&lt;div&gt;&lt;span style=&quot;color: rgb(32, 33, 36); font-family: &amp;quot;Google Sans&amp;quot;, arial, sans-serif-medium, sans-serif; font-size: 28px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;PostgreSQL&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFD700;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="350" y="250" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="visitor" target="webApp" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="webApp" target="database" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
