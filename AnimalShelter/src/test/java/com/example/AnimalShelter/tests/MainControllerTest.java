@@ -8,17 +8,27 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+/**
+ * Тестовый класс для проверки функциональности главной страницы.
+ */
 @SpringBootTest
 @AutoConfigureMockMvc
 public class MainControllerTest {
 
     @Autowired
-    private MockMvc mockMvc;
+    private MockMvc mockMvc; // Внедрение MockMvc для выполнения HTTP-запросов в тестах
 
+    /**
+     * Тест проверяет, что домашняя страница возвращает корректный статус и отображает нужное представление.
+     */
     @Test
     public void testHomePage() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/")) // Perform a GET request to the home page URL
-                .andExpect(MockMvcResultMatchers.status().isOk()) // Expect HTTP status code 200 (OK)
-                .andExpect(MockMvcResultMatchers.view().name("home")); // Expect the view name to be "index"
+        // Выполняем GET-запрос к URL главной страницы
+        mockMvc.perform(MockMvcRequestBuilders.get("/"))
+                // Ожидаем HTTP статус 200 (OK)
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                // Ожидаем, что представление будет иметь имя "home"
+                .andExpect(MockMvcResultMatchers.view().name("home"));
     }
 }
+
