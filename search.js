@@ -63,6 +63,11 @@ function getHighlightedText(str, boundaries, from, to) {
         text += "<span class='result-highlight'>";
         text += escapeHtml(str.slice(Math.max(start, b0), Math.min(to, b1)));
         text += "</span>";
+        text += "</span>";
+        text += "</span>";
+        text += "</span>";
+        text += "</span>";
+        
         start = Math.min(to, b1);
     }
     text += escapeHtml(str.slice(start, to));
